@@ -12,6 +12,10 @@ html {
   text-size-adjust: 100%;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 img {
   display: inline-block;
   width: 100%;
@@ -25,7 +29,7 @@ img:last-child {
   display: none;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 25em) {
   img {
     display: inline;
     width: 49%;
@@ -41,30 +45,35 @@ img:last-child {
 
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 38em) {
   img {
-    display: inline;
-    width: 30%;
-    float: left;
+    display: inline-block;
+    width: 32%;
     padding: 2px;
   }
 
-  img first-child {
+  img:first-child {
     display: none;
   }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 60em) {
   img {
-    width: 22%;
-    padding: none;
+    width: 23.5%;
+  }
+
+  img:first-child {
+    display: inline-block;
   }
 
   img:last-child {
-    display: inline;
+    display: inline-block;
   }
 
   body {
-    width: 100%
+    padding: 0;
+    text-align: center;
   }
+
+
 }
