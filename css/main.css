@@ -22,7 +22,7 @@ img {
 }
 
 img:nth-child(2) {
-display: none;
+  display: none;
 }
 
 img:last-child {
@@ -30,13 +30,14 @@ img:last-child {
 }
 
 @media only screen and (min-width: 25em) {
+
   img {
     display: inline;
     width: 49%;
   }
 
   img:nth-child(2) {
-  display: inline;
+    display: inline;
   }
 
   img:last-child {
@@ -46,6 +47,7 @@ img:last-child {
 }
 
 @media only screen and (min-width: 38em) {
+
   img {
     display: inline-block;
     width: 32%;
@@ -55,9 +57,11 @@ img:last-child {
   img:first-child {
     display: none;
   }
+  
 }
 
 @media only screen and (min-width: 60em) {
+
   img {
     width: 23.5%;
   }
@@ -74,6 +78,5 @@ img:last-child {
     padding: 0;
     text-align: center;
   }
-
 
 }
